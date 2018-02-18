@@ -1,7 +1,7 @@
 # Toucans-Team-4
 Voyage-4
 
-
-@Negator
-@Zoey
-@Nils.Gova
+@lazycesar
+@negator
+@zoey
+@nils.gova
