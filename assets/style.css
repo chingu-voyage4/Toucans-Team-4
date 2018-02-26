@@ -1,4 +1,13 @@
 /*-----------------------------
+variables styling
+-----------------------------*/
+:root {
+	--grey: #fafafa;
+	--darkgrey: #4c525a;
+	--green:#00b289;
+	--white:#fff;
+}
+/*-----------------------------
 general
 -----------------------------*/
 *,
@@ -30,7 +39,7 @@ body{
 }
 a {
 	text-decoration: none;
-	color: #5C525A;
+	color:var(--darkgrey);
 }
 img{
 	max-width: 100%;
@@ -41,14 +50,14 @@ img{
 }
 
 .button{
-	background-color: #00b289;
+	background-color:var(--green);
 	border-radius: 4px;
-	color: #fff;
+	color: var(--white);
 	letter-spacing: 1px;
 }
 .outline{
-	border:1px solid #00b289;
-	color: #00b289;
+	border:1px solid var(--green);
+	color: var(--green);
 	background-color: transparent;
 }
 /*-----------------------------
@@ -65,7 +74,7 @@ header
 .header{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	background-color:lightcyan;
+	background-color:var(--grey);
 	justify-content: center;
 }
 .header-nav{
