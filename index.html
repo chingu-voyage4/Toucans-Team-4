@@ -20,8 +20,29 @@
 				</a>
 			</div>
 			<ul	class="header-nav__menu">
-				<li class="header-nav__item"><a href="#home">product <i class="fas fa-chevron-down"></i></a></li>
-				<li class="header-nav__item"><a href="#home">resources<i class="fas fa-chevron-down"></i></a></li>
+				<li class="header-nav__item">
+					<a onclick="myFunction()" class="dropbtn">product <i class="fas fa-chevron-down"></i></a>
+					<ul id="product-dropdown" class="header-dropdown">
+							<li><a href="#home">PROPOSALS</a></li>
+							<li><a href="#home">CONTRACTS</a></li>
+							<li><a href="#home">TIME TRACKING</a></li>
+							<li><a href="#home">PROJECTS</a></li>
+							<li><a href="#home">EXPENSES</a></li>
+							<li><a href="#home">INVOICES & PAYMENTS</a></li>
+							<li><a href="#home">RECURRING PAYMENTS <sup>NEW</sup></a></li>
+							<li><a href="#home">REPORTING</a></li>
+					</ul>
+				</li>
+				<li class="header-nav__item">
+					<a onclick="myFunction2()" class="dropbtn">resources <i class="fas fa-chevron-down"></i></a>
+					<ul id="resources-dropdown" class="header-dropdown">
+						<li><a href="#home">FREELANCE BLOG</a></li>
+						<li><a href="#home">FREELANCE RATES</a></li>
+						<li><a href="#home">FREELANCE RESOURCES</a></li>
+						<li><a href="#home">TOOLS DIRECTORY</a></li>
+						<li><a href="#home">SUBCONTRACTING TOOLKITS</a></li>
+					</ul>
+				</li>
 				<li class="header-nav__item"><a href="#home">plans</a></li>
 				<li class="header-nav__item"><a class="button outline" href="#home">log in</a></li>
 				<li class="header-nav__item"><a class="button" href="#home">start free</a></li>
@@ -34,7 +55,7 @@
 
 	</footer>
 
-
+	<script type="text/javascript" src="assets/style.js"></script>
 </body>
 
 </html>
