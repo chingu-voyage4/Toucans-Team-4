@@ -90,11 +90,9 @@ header
 .header-nav__item a{
 	padding: 14px 14px;
 	}
-
 .header-nav__logo{
 	margin-right: auto;
 }
-
 /*-----------------------------
 Zoey
 section-4
@@ -105,23 +103,17 @@ section-4
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(3, auto);
 	color: #696969;
-
-
 }
 .section-4-header{
 	grid-column: 2/12;
-	
 }
 .section-4-header__title{
-	
 	display: block;
 	text-align: center;
 	color: #00b289;
 	font-size: 2.5em;
 	font-family: "Proximanova light";
 	margin-bottom: 0;
-	
-
 }
 .section-4-header__list{
 	display: flex;
@@ -129,13 +121,10 @@ section-4
 	margin-top: 0;
 	padding: 30px 110px; 
 	border-bottom: 1px solid #ddd;
-	
 }
 .section-4-header__list li{
-
 	list-style-type: none;
 	display: inline-block;
-	
 }
 .section-4-header__list li:first-of-type{
 	color: #00b289;
