@@ -120,49 +120,47 @@ section-4
 	font-size: 2.5em;
 	font-family: "Proximanova light";
 	margin-bottom: 0;
-	
 
 }
-.section-4-header__list{
+
+#tabs{
+	grid-column: 2/12;
+	display: flex;
+	flex-direction: column;
+	
+}
+.section-4-main__tabs{
+	
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	margin-top: 0;
 	padding: 30px 110px; 
 	border-bottom: 1px solid #ddd;
 	
 }
-.section-4-header__list li{
+.section-4-list{
 
 	list-style-type: none;
 	display: inline-block;
 	
+	
 }
-.section-4-header__list li:first-of-type{
+.active-tab{
 	color: #00b289;
 }
-.section-4-main{
-	grid-column: 2/12;
-	display: grid;
-	grid-template-columns: (12,1fr);
-	
+#tabs-1 , #tabs-2, #tabs-3 , #tabs-4, #tabs-5 {
+	display: flex;
 
 }
 .section-4-main__item1{
-	grid-column: 2/7;
 	border-bottom: 1px solid #ddd;
 	align-self: flex-start;
 	padding: 20px;
 	padding-bottom: 0
 
 }
-@media only screen and(max-width: 870px){
-	.section-4-main__item1{
-	grid-column: 2/12;
-}
-.section-4-main__item2{
-	grid-column: 2/12;
-	}
-}
+
 .section-4-main__item1 div{
 	
 	padding: 20px;
@@ -179,7 +177,6 @@ section-4
 	border-bottom: 0;
 }
 .section-4-main__item2{
-	grid-column: 8/12;
 	padding: 10px;
 }
 .section-4-main__moving{
@@ -209,14 +206,16 @@ section-4
 	font-family: "Proximanova light";
 	color: #00b289;
 }
-.section-4-main__item2 p:first-of-type{
-	line-height: 20px;
-	font-size: 1.1em;
-}
-.section-4-main__item2 p:last-of-type{
+
+.section-4-main__item2 p{
 	color: #00b289;
 	font-size: 1.1em;
 	margin-top: 40px;
+}
+.section-4-main__item2 p:first-of-type{
+	line-height: 20px;
+	font-size: 1.1em;
+	color: #696969; 
 }
 .fas.fa-chevron-right {
     font-size: 12px;
