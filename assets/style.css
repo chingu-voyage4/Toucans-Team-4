@@ -59,11 +59,10 @@ sup{
 	background-color:var(--green);
 	border-radius: 4px;
 	color: var(--white);
-	letter-spacing: 1px;
-	
 }
-.outline{
+.button-outline{
 	border:1px solid var(--green);
+	border-radius: 4px;
 	color: var(--green);
 	background-color: transparent;
 }
@@ -81,6 +80,7 @@ header
 	background-color:var(--grey);
 	justify-content: center;
 }
+
 .header-nav{
 	grid-column-start: 2;
 	display: flex;
@@ -96,11 +96,14 @@ header
 	display: inline-block;
 	list-style-type: none;
 	text-transform: uppercase;
-	letter-spacing: .07em;
+	letter-spacing: .08em;
 	cursor: pointer;
 }
 .header-nav__item a{
 	padding: 14px 14px;
+}
+.header-nav__menu .button {
+	margin-left: 25px;
 }
 /* Dropdown Content (Hidden by Default) */
 .header-dropdown {
