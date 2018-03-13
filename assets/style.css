@@ -181,7 +181,6 @@ section-4
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, auto);
     color: #696969;
-    background-color: lightblue;
 }
 
 .section-4-header {
@@ -393,7 +392,6 @@ section-6
     grid-column-gap: 25px;
     color: #696969;
     margin-bottom: 100px;
-    background-color: lightblue;
 }
 
 .section-6-part1 {
