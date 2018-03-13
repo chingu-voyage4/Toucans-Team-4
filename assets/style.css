@@ -309,7 +309,6 @@ section-4
 	letter-spacing: 1px;
 	padding: 16px 18px;
 	margin: 40px auto 150px auto;
-
 }
 
 /*-----------------------------
@@ -321,9 +320,7 @@ section-5
 	display: grid;
 	grid-template-columns: repeat(12 , 1fr);
 	grid-gap: 50px;
-	color: #696969;
-	
-	
+	color: #696969;	
 }
 .section-5-header{
 	grid-column: 1/-1;
