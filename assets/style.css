@@ -3,7 +3,7 @@ variables styling
 -----------------------------*/
 :root {
     --grey: #fafafa;
-    --lightgray: #959ca7;
+    --lightgrey: #959ca7;
     --darkgrey: #4c525a;
     --green: #00b289;
     --white: #fff;
@@ -73,12 +73,22 @@ p {
 	background-color:var(--green);
 	border-radius: 4px;
 	color: var(--white);
+	padding: 14px 14px;
+	text-transform: uppercase;
 }
 .button-outline{
 	border:1px solid var(--green);
 	border-radius: 4px;
 	color: var(--green);
 	background-color: transparent;
+	padding: 14px 14px;	
+}
+.section-grey{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: var(--grey);
 }
 
 /*-----------------------------
@@ -94,10 +104,13 @@ container
 /*-----------------------------
 header
 -----------------------------*/
-.header{
-	background-color:var(--grey);
+.header {
+    background-color: var(--grey);
     justify-content: center;
     display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
 .header-nav{
@@ -141,7 +154,7 @@ header
 
 /* Links inside the dropdown */
 .header-dropdown a {
-    color: var(--lightgray);
+    color: var(--lightgrey);
     padding: 14px 8px 14px 18px;
     display: block;
 }
@@ -162,11 +175,42 @@ h1 {
     font-size: 2.5em;
     font-family: "Proximanova light";
 }
+/*-----------------------------
+Lazycesar
+section-1
+-----------------------------*/
 
-.grey-title {
-    color: grey;
+.section-1 {
+    display: flex;
+    width: 940px;
 }
 
+.section-1-part1 {
+    margin-top: 50px;
+}
+
+.section-1-part2 {
+	width: 65%;
+    min-height: 400px;
+    margin-top: 50px;
+}
+
+.section-1-button {
+    border-radius: 5px;
+    color: white;
+    padding: 1.2em 1.7em 1.2em 1.7em;
+    text-decoration: none;
+    background-color: var(--green);
+}
+.section-1-button:hover{
+	opacity: 0.9;
+}
+.section-1-part1 > p {
+    margin-bottom: 10%;
+}
+.section-1-part1 div {
+	margin: 3em 2em 6em 0;
+}
 /*-----------------------------
 Zoey
 section-4
@@ -511,44 +555,6 @@ section-6
 	vertical-align: bottom;
 	margin: 0 10px;
 }
-
-/*-----------------------------
-Nils
-section-1
------------------------------*/
-
-.section-1 {
-    display: flex;
-    width: 940px;
-    background-color: var(--grey);
-}
-
-.section-1-part1 {
-    margin-top: 50px;
-}
-
-.section-1-part2 {
-	width: 65%;
-    min-height: 400px;
-    margin-top: 50px;
-}
-
-.section-1-button {
-    border-radius: 5px;
-    color: white;
-    padding: 1.2em 1.7em 1.2em 1.7em;
-    text-decoration: none;
-    background-color: var(--green);
-}
-.section-1-button:hover{
-	opacity: 0.9;
-}
-.section-1-part1 > p {
-    margin-bottom: 10%;
-}
-.section-1-part1 div {
-	margin: 3em 2em 6em 0;
-}
 /*-----------------------------
 Nils
 section-8
@@ -562,9 +568,3 @@ section-9
 Nils
 footer
 -----------------------------*/
-
-footer{
-    grid-column: 2;
-    height: 50px;
-}
-
