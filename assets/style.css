@@ -378,11 +378,6 @@ section-5
     flex-direction: column;
 	color: #696969;	
 }
-
-.section-5-header{
-	
-}
-
 .section-5-header__title{
 	display: block;
 	text-align: center;
@@ -494,13 +489,13 @@ section-6
 	width: 940px;
 	display: flex;
 	color: #696969;
+	margin-top: 100px;
 	margin-bottom: 100px; 
 }
 .section-6-part1{
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 30px;
-	
 }	
 
 .section-6-part1__title{
@@ -542,9 +537,6 @@ section-6
 .section-6-part2 ul li{
 	padding: 10px;
 	cursor: default;
-}
-.section-6-part2 ul li span{
-		
 }
 .section-6-part2 ul li span:hover{
 	margin-left: 15px;
