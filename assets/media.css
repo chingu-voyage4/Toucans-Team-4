@@ -1,0 +1,36 @@
+@media only screen and (max-width: 982px){
+	.header-nav{
+		width: 720px;
+	}
+	.header-nav__menu{
+		display: none;
+	}
+	.section-4, .section-5, .section-6, .section-1{
+		width:720px;
+	}
+	.section-1{
+		flex-direction: column;
+	}
+	.section-1-part2{
+		width: 90%;
+	}
+	.section-4-main__tabs{
+		padding: 20px 15px;
+	}
+	#tabs-1 , #tabs-2, #tabs-3 , #tabs-4, #tabs-5{
+		flex-direction: column;
+	}
+
+}
+@media only screen and (max-width: 810px){
+	.section-4, .section-5, .section-6, .section-1, .header-nav{
+		padding: 20px;
+		max-width: 720px;
+	}
+	.section-5-main{
+		flex-direction: column;
+	}
+	.section-6{
+		flex-direction: column;
+	}	
+}
