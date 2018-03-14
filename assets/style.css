@@ -79,6 +79,7 @@ p {
 	color: var(--white);
 	padding: 14px 14px;
 	text-transform: uppercase;
+	display: inline-block;
 }
 .button-outline{
 	border:1px solid var(--green);
@@ -124,7 +125,7 @@ header
 .header-nav{
 	display: flex;
 	align-items: center;
-	padding: 19px 0;
+	padding: 8px 0;
     justify-content: end;
     width: 940px;
 }
@@ -188,41 +189,31 @@ h1 {
 Lazycesar
 section-1
 -----------------------------*/
-
-.section-1 {
+.dashboard {
     display: flex;
 	width: 940px;
 	position: relative;
 }
-
-.section-1-part1 {
+.dashboard-text {
 	margin-top: 50px;
-	width: 50%;
+	width: 45%;
 }
-
-.section-1-part2 {
+.dashboard-img {
     width: 77%;
     min-height: 400px;
     position: absolute;
     top: 30px;
     right: -281px;
 }
-
-.section-1-button {
-    border-radius: 5px;
-    color: white;
-    padding: 1.2em 1.7em 1.2em 1.7em;
-    text-decoration: none;
-    background-color: var(--green);
-}
-.section-1-button:hover{
+.dashboard .button:hover{
 	opacity: 0.9;
 }
-.section-1-part1 > p {
+.dashboard > p {
     margin-bottom: 10%;
 }
-.section-1-part1 div {
-	margin: 3em 2em 6em 0;
+.dashboard-logos {
+	margin-top:1rem;
+	display: block;
 }
 /*-----------------------------
 Zoey
