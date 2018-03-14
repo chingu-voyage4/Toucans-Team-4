@@ -90,9 +90,6 @@ container
     align-items: center;
     justify-content: center;
 }
-main{
-    
-}
 
 /*-----------------------------
 header
@@ -176,13 +173,9 @@ section-4
 -----------------------------*/
 .section-4{
 	width:940px;
-	color: #696969;
+	color: var(--darkgrey);
 	display: flex;
 	flex-direction: column;
-}
-
-.section-4-header{
-	
 }
 
 .section-4-header__title{
@@ -214,7 +207,7 @@ section-4
 	padding: 8px;
 }
 .active-tab{
-	color: #00b289;
+	color: var(--green);
 }
 #tabs-1 , #tabs-2, #tabs-3 , #tabs-4, #tabs-5 {
 	display: flex;
@@ -504,6 +497,14 @@ section-6
 
 .section-6-part2 ul li{
 	padding: 10px;
+	cursor: default;
+}
+.section-6-part2 ul li span{
+		
+}
+.section-6-part2 ul li span:hover{
+	margin-left: 15px;
+	transition: 0.6s;
 }
 
 .section-6-part2 ul li img{
