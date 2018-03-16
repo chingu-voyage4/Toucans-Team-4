@@ -183,41 +183,6 @@ header
     display: block;
 }
 /*-----------------------------
-Lazycesar
-section-1
------------------------------*/
-.dashboard {
-    display: flex;
-	width: 940px;
-	position: relative;
-	padding-top: 3rem;
-	padding-bottom: 8rem;
-}
-.dashboard-text {
-	width: 45%;
-}
-.dashboard-text .button {
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-.dashboard-img {
-    width: 80%;
-    position: absolute;
-    top: 30px;
-    right: -281px;
-}
-.button--hover:hover{
-	opacity: 0.9;
-}
-.dashboard > p {
-    margin-bottom: 10%;
-}
-.dashboard-logos {
-	margin-top:1rem;
-	display: inline-block;
-	opacity: 0.5;
-}
-/*-----------------------------
 Zoey
 section-4
 -----------------------------*/
