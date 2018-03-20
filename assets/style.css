@@ -3,10 +3,11 @@ variables styling
 -----------------------------*/
 :root {
     --grey: #fafafa;
-    --lightgray: #959ca7;
+    --lightgrey: #959ca7;
     --darkgrey: #4c525a;
     --green: #00b289;
-    --white: #fff;
+	--white: #fff;
+	--textgrey: #777;
 }
 
 /*-----------------------------
@@ -21,10 +22,10 @@ general
 }
 
 @font-face {
-    font-family: "Proximanova regular";
-    font-style: normal;
-    font-weight: 400;
-    src: url("https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/58882027df653d342d043883_ProximaNova-Regular.otf") format("opentype");
+	font-family: "Proximanova regular";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/58882027df653d342d043883_ProximaNova-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -41,7 +42,15 @@ html, body {
 body {
     background: #faffff;
     font-family: "Proximanova regular", Georgia, sans-serif;
-    font-size: 14px;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+    color: #00b289;
+    font-size: 2.45em;
+	font-family: "Proximanova light";
+	font-weight: 300;
 }
 
 a {
@@ -59,55 +68,68 @@ sup {
 }
 
 p {
-    color: #696969;
-    font-size: 1.2em;
-    font-family: "Proximanova light";
+    color: var(--textgrey);
+    font-size: 1.12em;
+	font-family: "Proximanova regular";
+	font-weight: 400;
+	line-height: 24px;
 }
-
 .fas.fa-chevron-down {
     font-size: 12px;
     margin-left: 7px;
 }
 
 .button{
-	background-color:var(--green);
+	background-color: var(--green);
 	border-radius: 4px;
 	color: var(--white);
+	padding: 16px 26px;
+	text-transform: uppercase;
+	display: inline-block;
+	letter-spacing: 1px;
 }
 .button-outline{
 	border:1px solid var(--green);
 	border-radius: 4px;
 	color: var(--green);
 	background-color: transparent;
+	padding: 14px 14px;	
+}
+.section-grey{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: var(--grey);
 }
 
 /*-----------------------------
 container
 -----------------------------*/
 .container {
-    display: grid;
-    grid-template-columns: auto 940px auto;
-}
-
-main{
-    grid-column-start:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-----------------------------
 header
 -----------------------------*/
-.header{
-    grid-column: 1/-1;
-	background-color:var(--grey);
+.header {
+    background-color: var(--grey);
     justify-content: center;
     display: flex;
-    
+    position: sticky;
+    top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .header-nav{
 	display: flex;
 	align-items: center;
-	padding: 19px 0;
+	padding: 8px 0;
     justify-content: end;
     width: 940px;
 }
@@ -145,7 +167,7 @@ header
 
 /* Links inside the dropdown */
 .header-dropdown a {
-    color: var(--lightgray);
+    color: var(--lightgrey);
     padding: 14px 8px 14px 18px;
     display: block;
 }
@@ -160,31 +182,15 @@ header
 .show {
     display: block;
 }
-
-h1 {
-    color: #00b289;
-    font-size: 2.5em;
-    font-family: "Proximanova light";
-}
-
-.grey-title {
-    color: grey;
-}
-
 /*-----------------------------
 Zoey
 section-4
 -----------------------------*/
 .section-4{
-	grid-column-start: 2;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(3, auto);
-	color: #696969;
-}
-
-.section-4-header{
-	grid-column: 1/-1;
+	width:940px;
+	color: var(--darkgrey);
+	display: flex;
+	flex-direction: column;
 }
 
 .section-4-header__title{
@@ -197,37 +203,36 @@ section-4
 }
 
 #tabs{
-	grid-column: 1/-1;
 	display: flex;
 	flex-direction: column;
 }
+
 .section-4-main__tabs{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-top: 0;
-	padding: 30px 110px; 
+	padding: 20px 110px; 
 	border-bottom: 1px solid #ddd;
 }
 .section-4-list{
 	list-style-type: none;
-	display: inline-block;	
+	padding: 8px;
 }
 .active-tab{
-	color: #00b289;
+	color: var(--green);
 }
 #tabs-1 , #tabs-2, #tabs-3 , #tabs-4, #tabs-5 {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	display: flex;
 }
 .section-4-main__item1{
-	grid-column: 1/7;
 	border-bottom: 1px solid #ddd;
 	align-self: flex-start;
 	padding: 20px;
 	padding-bottom: 0
 }
-
 .section-4-main__item1 div{
 	padding: 20px;
 	padding-bottom: 0;
@@ -245,7 +250,6 @@ section-4
 }
 
 .section-4-main__item2{
-	grid-column: 7/13;
 	padding: 10px;
 }
 
@@ -325,7 +329,6 @@ section-4
     font-size: 12px;
     margin-left: 7px;}
 .section-4__button{
-	grid-column: 5 / 9;
 	background-color: #00b289;
 	border-radius: 4px;
 	color: #fff;
@@ -341,17 +344,11 @@ Zoey
 section-5
 -----------------------------*/
 .section-5{
-	grid-column-start: 2;
-	display: grid;
-	grid-template-columns: repeat(12 , 1fr);
-	grid-gap: 50px;
+	width: 940px;
+	display: flex;
+    flex-direction: column;
 	color: #696969;	
 }
-
-.section-5-header{
-	grid-column: 1/-1;
-}
-
 .section-5-header__title{
 	display: block;
 	text-align: center;
@@ -371,16 +368,13 @@ section-5
 }
 
 .section-5-main{
-	grid-column: 1/ 13;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap; 
+	align-items: center; 
 }
 
 .section-5-main__item{
     text-align: center;
-
 }
 
 .section-5-main__moving{
@@ -438,7 +432,6 @@ section-5
 }
 
 .section-5-main__footer{
-	grid-column: 1/-1;
 	background-image: url('https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/594c93d4f9a65a6318d46598_world-map.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -464,20 +457,18 @@ Zoey
 section-6
 -----------------------------*/
 .section-6{
-	grid-column-start: 2;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 40px;
+	width: 940px;
+	display: flex;
 	color: #696969;
+	margin-top: 100px;
 	margin-bottom: 100px; 
 }
 .section-6-part1{
-	grid-column: 1/9;
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 30px;
-	
-}
+}	
+
 .section-6-part1__title{
 	display: inline-block;
 	text-align: left;
@@ -505,10 +496,9 @@ section-6
 }
 
 .section-6-part2{
-	grid-column: 9/13;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	width: 480px;
 }
-
 .section-6-part2 ul{	
 	list-style-type: none;
 	font-size: 1.4rem;
@@ -517,49 +507,16 @@ section-6
 
 .section-6-part2 ul li{
 	padding: 10px;
+	cursor: default;
+}
+.section-6-part2 ul li span:hover{
+	margin-left: 15px;
+	transition: 0.6s;
 }
 
 .section-6-part2 ul li img{
 	vertical-align: bottom;
 	margin: 0 10px;
-}
-
-/*-----------------------------
-Nils
-section-1
------------------------------*/
-
-.section-1 {
-    grid-column: 1/ -1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 50px;
-    background-color: var(--grey);
-
-}
-
-.section-1-part1 {
-    grid-column: 4 / 7;
-    margin-top: 50px;
-}
-
-.section-1-part2 {
-    grid-column: 7 / 12;
-    min-height: 400px;
-    background-color: #a0c263;
-    margin-top: 50px;
-}
-
-#section-1-button {
-    border-radius: 5px;
-    color: white;
-    padding: 1.2em 1.7em 1.2em 1.7em;
-    text-decoration: none;
-    background-color: var(--green);
-}
-
-.section-1-part1 > p {
-    margin-bottom: 10%;
 }
 /*-----------------------------
 Nils
@@ -598,8 +555,3 @@ section-9
 Nils
 footer
 -----------------------------*/
-footer{
-    grid-column: 2;
-    height: 50px;
-}
-
