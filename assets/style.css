@@ -664,7 +664,7 @@ footer {
 }
 
 .footer-subtitle {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .footer-list {
@@ -698,5 +698,33 @@ footer {
 }
 
 .footer-link:hover {
+    color: white;
+}
+
+.links-list {
+    background-color: #353736;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 50px;
+}
+
+.links p {
+    opacity: .4 ;
+    color: #d1d1d1;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #d1d1d1;
+    opacity: .4;
+}
+.links a:hover {
     color: white;
 }
