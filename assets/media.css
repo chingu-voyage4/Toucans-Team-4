@@ -32,5 +32,9 @@
 	}
 	.section-6{
 		flex-direction: column;
-	}	
+	}
+
+	.footer-container {
+		flex-direction: column;
+	}
 }

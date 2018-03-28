@@ -193,40 +193,6 @@ header
 }
 
 /*-----------------------------
-Nils
-section-1
------------------------------*/
-
-.section-1 {
-    width: 940px;
-    display: flex;
-    padding-top: 50px;
-}
-
-.section-1-part1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.section-1__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
-    margin-right: auto;
-}
-
-.section-1__button:hover {
-    opacity: 0.9;
-}
-
-.dashboard {
-    width: 750px;
-}
-
-/*-----------------------------
 Zoey
 section-4
 -----------------------------*/
@@ -591,8 +557,9 @@ section-6
 
 /*-----------------------------
 Nils
-section-7
+section-8
 -----------------------------*/
+
 .section-7-title {
     margin-right: auto;
     margin-left: auto;
@@ -602,12 +569,10 @@ section-7
     max-width: 940px;
     display: flex;
 }
-
 /*-----------------------------
 Nils
-section-8
+section-9
 -----------------------------*/
-
 .section-8 {
     display: flex;
     flex-direction: column;
@@ -629,10 +594,6 @@ section-8
     opacity: 0.9;
 }
 
-/*-----------------------------
-Nils
-section-9
------------------------------*/
 
 /*-----------------------------
 Nils
@@ -640,7 +601,7 @@ footer
 -----------------------------*/
 
 footer {
-    padding-top: 80px;
+    padding-top: 40px;
     background-color: #353736;
     color: #adadad;
     padding-bottom: 80px;
@@ -659,8 +620,11 @@ footer {
     font-family: "Proximanova regular";
     font-size: 14px;
 }
+
 .footer-title {
+    margin-top: 40px;
     border-bottom: 1px dotted #4c525a;
+    max-width: 75%;
 }
 
 .footer-subtitle {
@@ -686,15 +650,14 @@ footer {
 
 .footer-column-1 {
     flex-grow: 1;
-    padding-left: 100px;
 }
+
 .footer-column-2 {
     flex-grow: 1;
-    padding-left: 70px;
 }
+
 .footer-column-3 {
     flex-grow: 1;
-    padding-left: 100px;
 }
 
 .footer-link:hover {
@@ -711,7 +674,7 @@ footer {
 }
 
 .links p {
-    opacity: .4 ;
+    opacity: .4;
     color: #d1d1d1;
     font-size: 13px;
     line-height: 18px;
@@ -725,6 +688,7 @@ footer {
     color: #d1d1d1;
     opacity: .4;
 }
+
 .links a:hover {
     color: white;
 }
