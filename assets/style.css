@@ -204,12 +204,9 @@ section-4
 }
 
 .section-4-header__title {
-    display: block;
     text-align: center;
-    color: #00b289;
-    font-size: 2.5em;
-    font-family: "Proximanova light";
     margin-bottom: 0;
+    color: var(--darkgrey)
 }
 
 #tabs {
@@ -327,11 +324,8 @@ section-4
     }
 }
 
-.section-4-main__item2 h2 {
-    margin-top: 10px;
-    font-size: 2.3em;
-    font-family: "Proximanova light";
-    color: #00b289;
+.section-4-main__item2 h1 {
+    margin-top: 15px; 
 }
 
 .section-4-main__item2 p {
@@ -377,12 +371,7 @@ section-5
 }
 
 .section-5-header__title {
-    display: block;
     text-align: center;
-    color: #00b289;
-    font-size: 2.5em;
-    font-family: "Proximanova light";
-    margin-bottom: 1.2rem;
 }
 
 .section-5-header__subtitle {
@@ -394,13 +383,24 @@ section-5
     margin-bottom: 0;
 }
 
-.section-5-main {
+.section-5-main{
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/594c93d4f9a65a6318d46598_world-map.png');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: 100% auto;
+    height: 700px;
+}
+.section-5-main div{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
 }
 
 .section-5-main__item {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
