@@ -34,7 +34,6 @@ general
     font-weight: 300;
     src: url("https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/5888204d45b15b0527f951c7_ProximaNova-Light.otf") format("opentype");
 }
-
 html, body {
     height: 100%;
 }
@@ -106,10 +105,6 @@ p {
     width: 100%;
     background-color: var(--grey);
 }
-.animate{
-	-webkit-transition: all 0.3s ease-out;
-					transition: all 0.3s ease-out;
-}
 
 /*-----------------------------
 container
@@ -124,13 +119,45 @@ container
 /*-----------------------------
 header
 -----------------------------*/
-.header{background-color: var(--grey);justify-content: center;display: flex;position: sticky;top: 0;width: 100%;z-index: 1;}
-.header-container{display: flex;align-items: center;padding: 8px 0;justify-content: end;width: 940px;}
-.header-logo {width: 160px;margin-right: auto;}
-.header-menu{margin: 0;padding: 0;}
-.header-menu__item {display: inline-block;list-style-type: none;text-transform: uppercase;letter-spacing: .08em;cursor: pointer;}
-.header-menu__item a {padding: 14px 14px;display: block;}
-.header-menu .button {margin-left: 25px;}
+.header {
+    background-color: var(--grey);
+    justify-content: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    justify-content: end;
+    width: 940px;
+}
+
+.header-nav__logo {
+    width: 160px;
+    margin-right: auto;
+}
+
+.header-nav__item {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    cursor: pointer;
+}
+
+.header-nav__item a {
+    padding: 14px 14px;
+}
+
+.header-nav__menu .button {
+    margin-left: 25px;
+}
+
 /* Dropdown Content (Hidden by Default) */
 .header-dropdown {
     display: none;
@@ -145,144 +172,25 @@ header
     border-radius: 10px;
     background-color: var(--white);
 }
+
 /* Links inside the dropdown */
-.header-dropdown a {color: var(--lightgrey);padding: 14px 8px 14px 18px;display: block;}
+.header-dropdown a {
+    color: var(--lightgrey);
+    padding: 14px 8px 14px 18px;
+    display: block;
+}
+
 /* Change color of dropdown links on hover */
-.header-dropdown a:hover {color: var(--darkgrey);transition: .3s;}
+.header-dropdown a:hover {
+    color: var(--darkgrey);
+    transition: .3s;
+}
+
 /* Show the dropdown menu */
-.show {display: block;}
-.header__icon-bar{display: block;float: right;padding:20px;display: none;}
-.header__icon-bar span{display: block;height:3px; width: 30px;background:var(--green); margin-bottom: 5px;}
-/*-----------------------------
-Zoey
-section-2
------------------------------*/
-.section-2{
-    width: 940px;
-    color: var(--darkgrey);
-    display: flex;
-    flex-direction: row;
-}
-.section-2-part1{
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
-}
-.section-2-part1__items{
-    width: 50%;
-}
-.section-2-part1__items a{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    width: 90%;
-    height: 90%;
-    padding: 30px 10px 10px 10px;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    opacity: 0.9;
-}
-.section-2-part1__items a:hover{
-    width: 93%;
-    height: 93%;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1), 0 14px 28px 0 rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    transition: 0.3s;
-}
-.section-2-part1__items a img{
-    width: 85px;
-    height: 85px;
-    margin-bottom: 0;
-}
-.section-2-part1__items a p{
-    margin-top: 0;
+.show {
+    display: block;
 }
 
-.section-2-part2{
-    width: 55%;
-    padding: 10px 20px;
-}
-
-.section-2__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
- } 
- /*-----------------------------
-Zoey
-section-3
------------------------------*/  
-.section-3{
-    width: 940px;
-    color: var(--darkgrey);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-}
-.section-3-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
- .section-3-main__items{
-    width: 49%;
-    border-radius: 10px; 
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1);
-    padding: 10px 10px 10px 150px;
-    margin-bottom: 10px;
-    margin-top: 10px;
- }
- .section-3-main__item1{
-    background-image:url('img/asset 31.png');
-    background-repeat: no-repeat;
-    background-position: -60px 20px;
-    background-size: 200px;
- }
- .section-3-main__item1:hover{
-    background-position: -60px 0;
- }
- .section-3-main__item2{
-    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fc004fa3c387e2ce03e8d_welcome-watch-icon-d8ce4c79fb9de1b107d34b980a421748.svg);
-    background-repeat: no-repeat;
-    background-position: -80px 20px;
-    background-size: 200px;
- }
- .section-3-main__item2:hover{
-    background-position: -80px 0;
- }
- .section-3-main__item3{
-    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fbf3efa3c387e2ce03e1b_welcome-hands-icon.svg);
-    background-repeat: no-repeat;
-    background-position: -80px 35px;
-    background-size: 200px;
- }
- .section-3-main__item3:hover{
-    background-position: -80px 0;
- }
- .section-3-main__item4{
-    background-image:url('img/asset 34.png');
-    background-repeat: no-repeat;
-    background-position: -80px 30px;
-    background-size: 200px;
- }
- .section-3-main__item4:hover{
-    background-position: -80px 0;
- }
- .section-3-main__items:hover{
-    margin-bottom: 20px;
-    margin-top: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 18px 0 rgba(0, 0, 0, 0.1);
-    transition: 0.3s ;
- }
- .section-3__button {
-    margin-top: 40px;
- } 
 /*-----------------------------
 Zoey
 section-4
@@ -292,7 +200,6 @@ section-4
     color: var(--darkgrey);
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
 }
 
 .section-4-header__title {
@@ -649,23 +556,89 @@ section-6
 
 /*-----------------------------
 Nils
-section-8
+section-7
 -----------------------------*/
+.section-7 {
+    padding-bottom: 80px;
+    
+}
+.text h3 {
+    color: #00b289;
+}
+.text p {
+    color: #4c525a;
+    font-size: 12px;
+    letter-spacing: .4px;
+    font-family: "Proximanova regular";
+    font-weight: 400;
+}
 
+.line {
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f8fb;
+}
 .section-7-title {
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 20px;
 }
 
 .section-7-part1 {
     max-width: 940px;
     display: flex;
 }
+.section-7-part2 {
+    max-width: 940px;
+    display: flex;
+}
+
+.card {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 20px;
+    padding:  10px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px 4px rgba(0,0,0,.04);
+}
+
+.foto {
+    border-radius: 5px;
+}
+
+.description .name {
+    color: #3b495b;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.person {
+    display: flex;
+    align-items: flex-start;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin-top: -15px;
+}
+
+.title-person {
+    
+    color: #aab2b9;
+    font-size: 12px;
+    margin-top: -10px;
+}
 /*-----------------------------
 Nils
-section-9
+section-8
 -----------------------------*/
 .section-8 {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
