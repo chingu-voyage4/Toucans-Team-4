@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src='assets/zoey.js'></script>
@@ -20,18 +20,19 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav class="header-nav">
-                <div class="header-nav__logo">
+            <div class="header-container">
+                <div class="header-logo">
                     <a href="#home">
-                    <img src="assets/img/bonsai_logo.png" alt="">
-                </a>
+                        <img src="assets/img/bonsai_logo.png" alt="">
+                    </a>
                 </div>
-                <ul class="header-nav__menu">
-                    <li class="header-nav__item">
-                        <a onclick="myFunction()" class="dropbtn">product<i class="fas fa-chevron-down"></i></a>
-                        <ul id="product-dropdown" class="header-dropdown">
-                            <li><a href="#home">PROPOSALS</a></li>
-                            <li><a href="#home">CONTRACTS</a></li>
+                <nav>
+                    <ul class="header-menu animate">
+                        <li class="header-menu__item">
+                            <a onclick="myFunction()" class="dropbtn">product<i class="fas fa-chevron-down"></i></a>
+                            <ul id="product-dropdown" class="header-dropdown">
+                                <li><a href="#home">PROPOSALS</a></li>
+                                <li><a href="#home">CONTRACTS</a></li>
                             <li><a href="#home">TIME TRACKING</a></li>
                             <li><a href="#home">PROJECTS</a></li>
                             <li><a href="#home">EXPENSES</a></li>
@@ -40,7 +41,7 @@
                             <li><a href="#home">REPORTING</a></li>
                         </ul>
                     </li>
-                    <li class="header-nav__item">
+                    <li class="header-menu__item">
                         <a onclick="myFunction2()" class="dropbtn">resources<i class="fas fa-chevron-down"></i></a>
                         <ul id="resources-dropdown" class="header-dropdown">
                             <li><a href="#home">FREELANCE BLOG</a></li>
@@ -50,19 +51,25 @@
                             <li><a href="#home">SUBCONTRACTING TOOLKITS</a></li>
                         </ul>
                     </li>
-                    <li class="header-nav__item">
+                    <li class="header-menu__item">
                         <a href="#home">plans</a>
                     </li>
-                    <li class="header-nav__item">
+                    <li class="header-menu__item">
                         <a class="button-outline" href="#home">log in</a>
                     </li>
-                    <li class="header-nav__item">
+                    <li class="header-menu__item">
                         <a class="button" href="#home">start free</a>
                     </li>
                 </ul>
             </nav>
+            <a href="" class="header__icon-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
         </header>
-
+        
         <!-- ***** Negator ***** -->
         <!-- ***** section 1 -->
 

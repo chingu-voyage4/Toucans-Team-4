@@ -106,6 +106,10 @@ p {
     width: 100%;
     background-color: var(--grey);
 }
+.animate{
+	-webkit-transition: all 0.3s ease-out;
+					transition: all 0.3s ease-out;
+}
 
 /*-----------------------------
 container
@@ -120,45 +124,13 @@ container
 /*-----------------------------
 header
 -----------------------------*/
-.header {
-    background-color: var(--grey);
-    justify-content: center;
-    display: flex;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    justify-content: end;
-    width: 940px;
-}
-
-.header-nav__logo {
-    width: 160px;
-    margin-right: auto;
-}
-
-.header-nav__item {
-    display: inline-block;
-    list-style-type: none;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    cursor: pointer;
-}
-
-.header-nav__item a {
-    padding: 14px 14px;
-}
-
-.header-nav__menu .button {
-    margin-left: 25px;
-}
-
+.header{background-color: var(--grey);justify-content: center;display: flex;position: sticky;top: 0;width: 100%;z-index: 1;}
+.header-container{display: flex;align-items: center;padding: 8px 0;justify-content: end;width: 940px;}
+.header-logo {width: 160px;margin-right: auto;}
+.header-menu{margin: 0;padding: 0;}
+.header-menu__item {display: inline-block;list-style-type: none;text-transform: uppercase;letter-spacing: .08em;cursor: pointer;}
+.header-menu__item a {padding: 14px 14px;display: block;}
+.header-menu .button {margin-left: 25px;}
 /* Dropdown Content (Hidden by Default) */
 .header-dropdown {
     display: none;
@@ -173,25 +145,14 @@ header
     border-radius: 10px;
     background-color: var(--white);
 }
-
 /* Links inside the dropdown */
-.header-dropdown a {
-    color: var(--lightgrey);
-    padding: 14px 8px 14px 18px;
-    display: block;
-}
-
+.header-dropdown a {color: var(--lightgrey);padding: 14px 8px 14px 18px;display: block;}
 /* Change color of dropdown links on hover */
-.header-dropdown a:hover {
-    color: var(--darkgrey);
-    transition: .3s;
-}
-
+.header-dropdown a:hover {color: var(--darkgrey);transition: .3s;}
 /* Show the dropdown menu */
-.show {
-    display: block;
-}
-
+.show {display: block;}
+.header__icon-bar{display: block;float: right;padding:20px;display: none;}
+.header__icon-bar span{display: block;height:3px; width: 30px;background:var(--green); margin-bottom: 5px;}
 /*-----------------------------
 Zoey
 section-4
