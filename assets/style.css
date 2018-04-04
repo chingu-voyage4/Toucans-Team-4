@@ -194,6 +194,136 @@ header
 
 /*-----------------------------
 Zoey
+section-2
+-----------------------------*/
+.section-2{
+    width: 940px;
+    color: var(--darkgrey);
+    display: flex;
+    flex-direction: row;
+}
+.section-2-part1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+}
+.section-2-part1__items{
+    width: 50%;
+}
+.section-2-part1__items a{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 90%;
+    padding: 30px 10px 10px 10px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.section-2-part1__items a:hover{
+    width: 93%;
+    height: 93%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1), 0 14px 28px 0 rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: 0.3s;
+}
+.section-2-part1__items a img{
+    width: 85px;
+    height: 85px;
+    margin-bottom: 0;
+}
+.section-2-part1__items a p{
+    margin-top: 0;
+}
+
+.section-2-part2{
+    width: 55%;
+    padding: 10px 20px;
+}
+
+.section-2__button {
+    background-color: #00b289;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 16px 25px;
+ } 
+ /*-----------------------------
+Zoey
+section-3
+-----------------------------*/  
+.section-3{
+    width: 940px;
+    color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.section-3-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .section-3-main__items{
+    width: 49%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 10px 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+ }
+ .section-3-main__item1{
+    background-image:url('img/asset 31.png');
+    background-repeat: no-repeat;
+    background-position: -60px 20px;
+    background-size: 200px;
+ }
+ .section-3-main__item1:hover{
+    background-position: -60px 0;
+ }
+ .section-3-main__item2{
+    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fc004fa3c387e2ce03e8d_welcome-watch-icon-d8ce4c79fb9de1b107d34b980a421748.svg);
+    background-repeat: no-repeat;
+    background-position: -80px 20px;
+    background-size: 200px;
+ }
+ .section-3-main__item2:hover{
+    background-position: -80px 0;
+ }
+ .section-3-main__item3{
+    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fbf3efa3c387e2ce03e1b_welcome-hands-icon.svg);
+    background-repeat: no-repeat;
+    background-position: -80px 35px;
+    background-size: 200px;
+ }
+ .section-3-main__item3:hover{
+    background-position: -80px 0;
+ }
+ .section-3-main__item4{
+    background-image:url('img/asset 34.png');
+    background-repeat: no-repeat;
+    background-position: -80px 30px;
+    background-size: 200px;
+ }
+ .section-3-main__item4:hover{
+    background-position: -80px 0;
+ }
+ .section-3-main__items:hover{
+    margin-bottom: 20px;
+    margin-top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 18px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s ;
+ }
+ .section-3__button {
+    margin-top: 40px;
+ } 
+/*-----------------------------
+Zoey
 section-4
 -----------------------------*/
 .section-4 {
@@ -201,6 +331,7 @@ section-4
     color: var(--darkgrey);
     display: flex;
     flex-direction: column;
+    margin-top: 200px;
 }
 
 .section-4-header__title {
