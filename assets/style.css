@@ -152,7 +152,7 @@ header
 /* Show the dropdown menu */
 .show {display: block;}
 .header__icon-bar{display: block;float: right;padding:20px;display: none;}
-.header__icon-bar span{display: block;height:3px; width: 30px;background:var(--green); margin-bottom: 5px;}
+.header__icon-bar span{display: block;height:3px; width: 15px;background:var(--green); margin-bottom: 5px;}
 /*-----------------------------
 Zoey
 section-4
