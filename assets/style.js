@@ -16,6 +16,7 @@ window.onclick = function(event) {
       }
     }
   }
+
   // else if (!event.target.matches('.dropbtn2')) {
   //   var dropdowns = document.getElementsByClassName("header-dropdown");
   //   var i;
@@ -37,5 +38,12 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
-});
+  $( "#tabs" ).tabs();
 
+    $('.section-4-list a').on('click' , event =>{
+
+      $('.section-4-list a').removeClass('active-tab');
+
+    $(event.currentTarget).addClass('active-tab');
+  });
+});
