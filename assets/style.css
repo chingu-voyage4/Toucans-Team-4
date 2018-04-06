@@ -241,16 +241,6 @@ section-2
     padding: 10px 20px;
 }
 
-.section-2__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
- } 
- .section-2__button:hover {
-    opacity: 0.9;
- }
  /*-----------------------------
 Zoey
 section-3
@@ -334,9 +324,6 @@ section-3
  .section-3__button {
     margin-top: 40px;
  } 
- .section-3__button:hover{
-    opacity: 0.9;
- }
 /*-----------------------------
 Zoey
 section-4
@@ -498,17 +485,7 @@ section-4
 }
 
 .section-4__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
     margin: 40px auto 150px auto;
-    
-}
-
-.section-4__button:hover {
-    opacity: 0.9;
 }
 
 /*-----------------------------
@@ -623,16 +600,7 @@ section-5
 }
 
 .section-5__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
     margin: auto;
-}
-
-.section-5__button:hover {
-    opacity: 0.9;
 }
 
 /*-----------------------------
@@ -671,16 +639,7 @@ section-6
 }
 
 .section-6__button {
-    background-color: #00b289;
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
     margin-right: auto;
-}
-
-.section-6__button:hover {
-    opacity: 0.9;
 }
 
 .section-6-part2 {
