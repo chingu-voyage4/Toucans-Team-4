@@ -28,22 +28,14 @@ window.onclick = function(event) {
   //   }
   // }
 }
-
-
 $(document).ready(function(){
-
   $(".header__icon-bar").click(function(e){
-
     $(".header-menu").toggleClass('is-open');
     e.preventDefault();
-
   });
   $( "#tabs" ).tabs();
-
     $('.section-4-list a').on('click' , event =>{
-
       $('.section-4-list a').removeClass('active-tab');
-
     $(event.currentTarget).addClass('active-tab');
   });
 });
