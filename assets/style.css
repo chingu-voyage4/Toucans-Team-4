@@ -154,6 +154,41 @@ header
 .header__icon-bar{display: block;float: right;padding:20px;display: none;}
 .header__icon-bar span{display: block;height:3px; width: 15px;background:var(--green); margin-bottom: 5px;}
 /*-----------------------------
+Lazycesar
+section-1
+-----------------------------*/
+.dashboard {
+    display: flex;
+    width: 940px;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+.dashboard-text {
+    width: 45%;
+}
+.dashboard-text .button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.dashboard-img {
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    right: -281px;
+}
+.button--hover:hover{
+    opacity: 0.9;
+}
+.dashboard > p {
+    margin-bottom: 10%;
+}
+.dashboard-logos {
+    margin-top:1rem;
+    display: inline-block;
+    opacity: 0.5;
+}
+/*-----------------------------
 Zoey
 section-2
 -----------------------------*/
@@ -247,40 +282,50 @@ section-3
     transition: 0.3s;
  }
  .section-3-main__item1{
-    background-image:url('img/asset 31.png');
-    background-repeat: no-repeat;
-    background-position: -60px 20px;
+    -webkit-background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('img/asset 31.png');
+    -moz-background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('img/asset 31.png');
+    background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('img/asset 31.png');
+    background-repeat: repeat ,no-repeat;
+    background-position:  -60px 20px;
     background-size: 200px;
  }
  .section-3-main__item1:hover{
+    background-image:url('img/asset 31.png');
+    background-repeat: no-repeat;
     background-position: -60px 0;
  }
  .section-3-main__item2{
-    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fc004fa3c387e2ce03e8d_welcome-watch-icon-d8ce4c79fb9de1b107d34b980a421748.svg);
-    background-repeat: no-repeat;
+    background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fc004fa3c387e2ce03e8d_welcome-watch-icon-d8ce4c79fb9de1b107d34b980a421748.svg);
+    background-repeat:repeat ,no-repeat;
     background-position: -80px 20px;
     background-size: 200px;
  }
  .section-3-main__item2:hover{
+    background-image: url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fc004fa3c387e2ce03e8d_welcome-watch-icon-d8ce4c79fb9de1b107d34b980a421748.svg);
     background-position: -80px 0;
+    background-repeat: no-repeat;
  }
  .section-3-main__item3{
-    background-image:url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fbf3efa3c387e2ce03e1b_welcome-hands-icon.svg);
-    background-repeat: no-repeat;
+    background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fbf3efa3c387e2ce03e1b_welcome-hands-icon.svg);
+    background-repeat:repeat ,no-repeat;
     background-position: -80px 35px;
     background-size: 200px;
  }
  .section-3-main__item3:hover{
+    background-image: url(https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/588fbf3efa3c387e2ce03e1b_welcome-hands-icon.svg);
     background-position: -80px 0;
+    background-repeat: no-repeat;
  }
  .section-3-main__item4{
-    background-image:url('img/asset 34.png');
-    background-repeat: no-repeat;
+    background-image:linear-gradient( rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url('img/asset 34.png');
+    background-repeat: repeat,no-repeat;
     background-position: -80px 30px;
     background-size: 200px;
  }
  .section-3-main__item4:hover{
+    background-image: url('img/asset 34.png');
     background-position: -80px 0;
+    background-repeat: no-repeat;
  }
 
  .section-3__button {

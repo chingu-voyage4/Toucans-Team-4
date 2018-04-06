@@ -28,10 +28,7 @@ window.onclick = function(event) {
   //   }
   // }
 }
-<<<<<<< HEAD:assets/style.js
 
-=======
->>>>>>> e47bc21b2e86a5f4ec39c8c15c23b5d520fb77d7:assets/script.js
 $(document).ready(function(){
   $(".header__icon-bar").click(function(e){
     $(".header-menu").toggleClass('is-open');
