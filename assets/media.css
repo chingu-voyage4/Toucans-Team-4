@@ -1,10 +1,5 @@
 @media only screen and (max-width: 990px){
-	.header-nav{
-		width: 728px;
-	}
-	.header-nav__menu{
-		display: none;
-	}
+	
 	.section-2, .section-3, .section-4, .section-5, .section-6, .section-1{
 		width:728px;
 	}
@@ -45,14 +40,17 @@
 	.header__icon-bar{display: block;}
 	.is-open{height: 300px;overflow: auto;background-color: lightblue;width: 100%;position: absolute;left: 0;top: 5.5em;}
 	.section-2,.section-3,.section-4, .section-5, .section-6{
-		padding: 20px;
-		max-width: 728px;
+		width: 100%;
+		padding: 15px;
 	}
 	.section-5-main div, .section-2,.section-3-main, .section-6{
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.section-2-part1{
-		width: 65%;
+		align-self: center;
+		width: 85%;
 	}
 	 .section-2-part2{
 		width: 100%;
@@ -63,6 +61,7 @@
 	}
 	.section-6-part2{
 		margin: auto;
+		width: 80%;
 	}
 
 	.footer-container {
@@ -71,14 +70,19 @@
 }
 @media only screen and (max-width: 480px){
 	.section-2-part1{
-		width: 100%;
-		border:1px solid red;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.section-2-part1__items {
-    width: 80%;
-    border:1px solid red;
+    width: 100%;
+   
 	}
 	.section-2-part2{
 		text-align: center;
+	}
+	.section-4-main__tabs{
+		flex-direction: column;
+		align-items: flex-start;
 	}
 }

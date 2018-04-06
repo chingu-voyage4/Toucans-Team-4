@@ -29,7 +29,6 @@ window.onclick = function(event) {
   // }
 }
 
-
 $(document).ready(function(){
 
   $(".header__icon-bar").click(function(e){
