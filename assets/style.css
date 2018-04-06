@@ -248,6 +248,9 @@ section-2
     letter-spacing: 1px;
     padding: 16px 25px;
  } 
+ .section-2__button:hover {
+    opacity: 0.9;
+ }
  /*-----------------------------
 Zoey
 section-3
@@ -331,6 +334,9 @@ section-3
  .section-3__button {
     margin-top: 40px;
  } 
+ .section-3__button:hover{
+    opacity: 0.9;
+ }
 /*-----------------------------
 Zoey
 section-4
