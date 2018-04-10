@@ -34,9 +34,30 @@ $(document).ready(function(){
     $(".header-menu").toggleClass('is-open');
     e.preventDefault();
   });
+  /*
+  //Zoey
+  //make tabs work
+  
   $( "#tabs" ).tabs();
     $('.section-4-list a').on('click' , event =>{
       $('.section-4-list a').removeClass('active-tab');
     $(event.currentTarget).addClass('active-tab');
-  });
+  }); */
 });
+
+let tabLink = document.getElementsByClassName('section-4-list__link');
+let tabContent = document.getElementsByClassName('tab-content');
+
+function openTab(e){
+  for(let i=0; i<tabContent.length; i++){
+    tabLink[i].classList.remove('active-tab');
+    tabContent[i].classList.remove('active-content');
+    if(tabContent[i].id === e.target.id){
+      tabContent[i].classList.add('active-content');
+      tabLink[i].classList.add('active-tab');
+    }
+  }
+}
+for(let i=0; i<tabLink.length; i++){
+  tabLink[i].addEventListener('click', openTab);
+}
