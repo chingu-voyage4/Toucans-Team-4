@@ -42,7 +42,7 @@ html, body {
 body {
     background: #faffff;
     font-family: "Proximanova regular", Georgia, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -70,7 +70,7 @@ sup {
 
 p {
     color: var(--textgrey);
-    font-size: 1.12em;
+    font-size: 1rem;
     font-family: "Proximanova regular";
     font-weight: 400;
     line-height: 24px;
