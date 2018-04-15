@@ -366,7 +366,7 @@ section-4
 }
 
 .section-4-list__link{
-    background-color: white;
+    background-color:var(--white);
     border: 0;
     cursor: pointer;
 }
