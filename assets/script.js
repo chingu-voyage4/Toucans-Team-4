@@ -16,17 +16,6 @@ window.onclick = function(event) {
       }
     }
   }
-
-  // else if (!event.target.matches('.dropbtn2')) {
-  //   var dropdowns = document.getElementsByClassName("header-dropdown");
-  //   var i;
-  //   for (i = 0; i < dropdowns.length; i++) {
-  //     var openDropdown = dropdowns[i];
-  //     if (openDropdown.classList.contains('show')) {
-  //       openDropdown.classList.remove('show');
-  //     }
-  //   }
-  // }
 }
 
 $(document).ready(function(){
@@ -37,7 +26,6 @@ $(document).ready(function(){
   /*
   //Zoey
   //make tabs work
-  
   $( "#tabs" ).tabs();
     $('.section-4-list a').on('click' , event =>{
       $('.section-4-list a').removeClass('active-tab');
