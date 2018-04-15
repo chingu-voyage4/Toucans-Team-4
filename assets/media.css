@@ -6,7 +6,7 @@
 	.section-4,
 	.section-5,
 	.section-6{	width:728px;}
-	dashboard {flex-direction: column;align-items: center;text-align: center; width: 100%}
+	.dashboard {flex-direction: column;align-items: center;text-align: center; width: 100%}
 	.dashboard-img{position:unset;width: 82%;padding: 3rem 0 0;}
 	.dashboard-text{width: 80%;margin: 0 auto;}
 	.section-1-part2{ width: 90%;}
@@ -50,7 +50,7 @@
 	.section-2-part1__items {width: 100%;}
 	.section-2-part1__items a p{height: 50px;margin-bottom: 15px;}
 	.section-2-part2{text-align: center;}
-	
+
 	.section-3-main__items{padding: 10px 40px;}
 	.section-4-main__tabs{flex-direction: column;align-items: flex-start;
 	}
