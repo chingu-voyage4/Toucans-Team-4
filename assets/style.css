@@ -8,6 +8,7 @@ variables styling
     --green: #00b289;
     --white: #fff;
     --textgrey: #777;
+    --black:#353736;
 }
 /*-----------------------------
 general
@@ -47,7 +48,7 @@ body {
 }
 
 h1 {
-    color: #00b289;
+    color: var(--green);
     font-size: 2.45em;
     font-family: "Proximanova light";
     font-weight: 300;
@@ -60,6 +61,8 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 sup {
@@ -124,11 +127,11 @@ container
 header
 -----------------------------*/
 .header{background-color: var(--grey);justify-content: center;display: flex;position: sticky;top: 0;width: 100%;z-index: 1;}
-.header-container{display: flex;align-items: center;padding: 8px 0;justify-content: end;width: 940px;}
+.header-container{display: flex;align-items: center;padding: 18px 0;justify-content: end;width: 940px;}
 .header-logo {width: 160px;margin-right: auto;}
 .header-menu{margin: 0;padding: 0;}
 .header-menu__item {display: inline-block;list-style-type: none;text-transform: uppercase;letter-spacing: .08em;cursor: pointer;}
-.header-menu__item a {padding: 14px 14px;display: block;}
+.header-menu__item a {padding: 14px 18px;display: block;}
 .header-menu .button {margin-left: 25px;}
 /* Dropdown Content (Hidden by Default) */
 .header-dropdown {
@@ -484,7 +487,7 @@ section-4
 
 .section-4-main__item2 p a {
     margin-right: 40px;
-    color: #00b289;
+    color: var(--green);
 }
 
 .fas.fa-chevron-right {
@@ -634,7 +637,7 @@ section-6
 .section-6-part1__title {
     display: inline-block;
     text-align: left;
-    color: #00b289;
+    color: var(--green);
     font-size: 2.3em;
     font-family: "Proximanova light";
     margin-bottom: 1.2rem;
@@ -702,7 +705,7 @@ section-9
 }
 
 .section-8__button {
-    background-color: #00b289;
+    background-color: var(--green);
     border-radius: 4px;
     color: #fff;
     letter-spacing: 1px;
@@ -726,6 +729,7 @@ footer {
     background-color: #353736;
     color: #adadad;
     padding-bottom: 80px;
+    width: 100%;
 }
 
 .footer-container {
@@ -786,7 +790,7 @@ footer {
 }
 
 .links-list {
-    background-color: #353736;
+    background-color:var(--black);
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -800,8 +804,6 @@ footer {
     font-size: 13px;
     line-height: 18px;
     font-weight: 500;
-    display: flex;
-    justify-content: center;
 }
 
 .links a {
