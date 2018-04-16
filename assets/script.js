@@ -36,16 +36,19 @@ $(document).ready(function(){
 let tabLink = document.getElementsByClassName('section-4-list__link');
 let tabContent = document.getElementsByClassName('tab-content');
 
-function openTab(e){
+const openTab = (e) =>{
   for(let i=0; i<tabContent.length; i++){
+    // remove active from button and tab-content
     tabLink[i].classList.remove('active-tab');
     tabContent[i].classList.remove('active-content');
+    // if id of the button was equal to id of tab-content,make them active
     if(tabContent[i].id === e.target.id){
       tabContent[i].classList.add('active-content');
       tabLink[i].classList.add('active-tab');
     }
   }
 }
+// when a button is clicked, Tab associated with that button works
 for(let i=0; i<tabLink.length; i++){
   tabLink[i].addEventListener('click', openTab);
 }
