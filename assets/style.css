@@ -8,7 +8,9 @@ variables styling
     --green: #00b289;
     --white: #fff;
     --textgrey: #777;
+    --textlightgrey:#aab2b9;
     --black:#353736;
+    
 }
 /*-----------------------------
 general
@@ -20,14 +22,12 @@ general
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: "Proximanova regular";
     font-style: normal;
     font-weight: 400;
     src: url("https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/58882027df653d342d043883_ProximaNova-Regular.otf") format("opentype");
 }
-
 @font-face {
     font-family: "Proximanova light";
     font-style: normal;
@@ -35,83 +35,23 @@ general
     src: url("https://uploads-ssl.webflow.com/58868bcd2ef4daaf0f072900/5888204d45b15b0527f951c7_ProximaNova-Light.otf") format("opentype");
 }
 
-html, body {
-    height: 100%;
-}
+html, body {height: 100%;}
+body {background: #faffff;font-family: "Proximanova regular", Georgia, sans-serif;font-size: 14px;margin: 0;padding: 0;overflow-x: hidden;}
+h1 {color: var(--green);font-size: 2.45em;font-family: "Proximanova light";font-weight: 300;}
+h3 {color: var(--green);font-size: 1rem;font-family: "Proximanova regular";font-weight: bold;}
+a {text-decoration: none;color: var(--darkgrey);}
+img {max-width: 100%;height: auto;vertical-align: middle;}
+sup {color: var(--green);font-weight: bolder;}
+p {color: var(--textgrey);font-size: 1rem;font-family: "Proximanova regular";font-weight: 400;line-height: 1.5 ; margin: 0;}
+.fas.fa-chevron-down {font-size: 12px;margin-left: 7px;}
 
-body {
-    background: #faffff;
-    font-family: "Proximanova regular", Georgia, sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
+.button {background-color: var(--green);border-radius: 4px;color: var(--white);padding: 16px 26px;text-transform: uppercase;display: inline-block;letter-spacing: 1px;}
+.button-outline {border: 1px solid var(--green);border-radius: 4px;color: var(--green);background-color: transparent;padding: 14px 14px;}
+.shadow{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 18px 0 rgba(0, 0, 0, 0.1);}
 
-h1 {
-    color: var(--green);
-    font-size: 2.45em;
-    font-family: "Proximanova light";
-    font-weight: 300;
-}
-
-a {
-    text-decoration: none;
-    color: var(--darkgrey);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-sup {
-    color: var(--green);
-    font-weight: bolder;
-}
-
-p {
-    color: var(--textgrey);
-    font-size: 1rem;
-    font-family: "Proximanova regular";
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.fas.fa-chevron-down {
-    font-size: 12px;
-    margin-left: 7px;
-}
-
-.button {
-    background-color: var(--green);
-    border-radius: 4px;
-    color: var(--white);
-    padding: 16px 26px;
-    text-transform: uppercase;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-
-.button-outline {
-    border: 1px solid var(--green);
-    border-radius: 4px;
-    color: var(--green);
-    background-color: transparent;
-    padding: 14px 14px;
-}
-
-.section-grey {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: var(--grey);
-}
-.animate{
-	-webkit-transition: all 0.3s ease-out;
-					transition: all 0.3s ease-out;
-}
+.section-grey {display: flex;flex-direction: column;align-items: center;width: 100%;background-color: var(--grey);padding: 100px 0;}
+.section-white {display: flex;flex-direction: column;align-items: center;width: 100%;background-color: var(--white);padding: 100px 0;}
+.animate {-webkit-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
 
 /*-----------------------------
 container
@@ -154,7 +94,7 @@ header
 /* Show the dropdown menu */
 .show {display: block;}
 .header__icon-bar{display: block;float: right;padding:20px;display: none;}
-.header__icon-bar span{display: block;height:3px; width: 15px;background:var(--green); margin-bottom: 5px;}
+.header__icon-bar span{display: block;height:2px; width: 15px;background:var(--green); margin-bottom: 2px;}
 /*-----------------------------
 Lazycesar
 section-1
@@ -163,8 +103,6 @@ section-1
     display: flex;
     width: 940px;
     position: relative;
-    padding-top: 3rem;
-    padding-bottom: 8rem;
 }
 .dashboard-text {
     width: 45%;
@@ -176,7 +114,7 @@ section-1
 .dashboard-img {
     width: 80%;
     position: absolute;
-    top: 30px;
+    top: -64px;
     right: -281px;
 }
 .button--hover:hover{
@@ -199,7 +137,6 @@ section-2
     color: var(--darkgrey);
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
 }
 .section-2-part1{
     display: flex;
@@ -236,6 +173,7 @@ section-2
 }
 .section-2-part1__items a p{
     margin-top: 0;
+    margin-bottom: 23px;
 }
 
 .section-2-part2{
@@ -254,7 +192,6 @@ section-3
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
 }
 .section-3-main{
     display: flex;
@@ -336,7 +273,7 @@ section-4
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 200px;
+    align-items: center;
 }
 
 .section-4-header__title {
@@ -348,6 +285,7 @@ section-4
 #tabs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .section-4-main__tabs {
@@ -494,11 +432,6 @@ section-4
     font-size: 12px;
     margin-left: 7px;
 }
-
-.section-4__button {
-    margin: 40px auto 150px auto;
-}
-
 /*-----------------------------
 Zoey
 section-5
@@ -611,7 +544,7 @@ section-5
 }
 
 .section-5__button {
-    margin: auto;
+    margin: 5% auto;
 }
 
 /*-----------------------------
@@ -622,25 +555,15 @@ section-6
     width: 940px;
     display: flex;
     color: #696969;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .section-6-part1 {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
-    padding-right:20px; 
+    padding-right: 65px;
     width: 65%;
-}
-
-.section-6-part1__title {
-    display: inline-block;
-    text-align: left;
-    color: var(--green);
-    font-size: 2.3em;
-    font-family: "Proximanova light";
-    margin-bottom: 1.2rem;
+    align-items: flex-start;
+    flex: 2 1 auto;
 }
 
 .section-6-part1 p {
@@ -648,11 +571,6 @@ section-6
     font-size: 1.1rem;
     margin-bottom: 50px;
 }
-
-.section-6__button {
-    margin-right: auto;
-}
-
 .section-6-part2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     width: 35%;
@@ -681,43 +599,30 @@ section-6
 
 /*-----------------------------
 Nils
-section-8
+section-7
 -----------------------------*/
-
-.section-7-title {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.section-7-part1 {
-    max-width: 940px;
-    display: flex;
-}
+.testimonials{width: 940px; display: flex;flex-direction: column;align-items: center;flex-direction: row;flex-wrap: wrap;}
+.testimonials h1 {text-align: center;display: block;width: 100%;}
+.card {background-color:var(--white);border-radius: 8px; flex: 0 0 auto; margin: 20px;padding: 0 20px;width: 45%;height: 230px;}
+.card-text p{font-size: small;font-style: italic;margin: 15px 0;}
+.card-person {display: flex;border-top: 1px solid #f3f3f3;padding-top: 10px;}
+.card-person img{ border-radius: 6px;margin-right: 25px;}
+.card-person__name { display: block; font-size: 1.1rem;margin-bottom: 9px;}
+.card-person__profession {display: block; color: var(--textlightgrey); font-size: smaller; }
 /*-----------------------------
 Nils
-section-9
+section-8
 -----------------------------*/
-.section-8 {
+.call-to-action {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 80px;
+    text-align: center;
 }
 
-.section-8__button {
-    background-color: var(--green);
-    border-radius: 4px;
-    color: #fff;
-    letter-spacing: 1px;
-    padding: 16px 25px;
-    margin-right: auto;
-    margin-left: auto;
+.call-to-action__subtitle{
+    margin-bottom: 40px 
 }
-
-.section-8__button:hover {
-    opacity: 0.9;
-}
-
 
 /*-----------------------------
 Nils

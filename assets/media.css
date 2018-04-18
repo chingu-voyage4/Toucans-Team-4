@@ -32,7 +32,7 @@
 	.header-menu__item > .button-outline {display: flex;justify-content: center;padding:14px 0;}
 	.header-menu__item > .button {display: flex;justify-content: center;padding:14px 0;}
 	.header__icon-bar{display: block;}
-	.is-open{height: 300px;overflow: auto;background-color: lightblue;width: 100%;position: absolute;left: 0;top: 5.5em;}
+	.is-open{height: auto;overflow: auto;background-color: var(--grey);width: 100%;position: absolute;left: 0;display:block;top: 5.5em;padding: 0 20px 20px;}
 	
 	.section-2,
 	.section-3,
@@ -48,7 +48,11 @@
 	.section-2-part1{align-self: center;width: 90%;}
 	.section-2-part2{width: 100%;}	
 	.section-3-main__items{flex-shrink: 1;width: 90%;}
-	.section-6-part2{margin: auto;width: 80%;}
+	.section-5-main{background-size: 261% auto;}
+	.section-6-part1{padding-right: 0;width: 100%;align-items: self-start;text-align: center;}
+	.section-6-part2{margin: 30px auto;width: 90%;}
+	.testimonials{width: 100%;padding: 0 20px;}
+	.card{width: 100%;margin:20px 0;}
 	.footer-container {flex-direction: column;}
 }
 @media only screen and (max-width: 480px){
