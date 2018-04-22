@@ -1,9 +1,17 @@
 /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+const product = document.getElementById("product-dropdown");
+const resources = document.getElementById("resources-dropdown");
 function myFunction() {
-    document.getElementById("product-dropdown").classList.toggle("show"); 
+  if(resources.classList.contains("show")){
+    resources.classList.remove("show");
+  }
+    product.classList.toggle("show"); 
 }
 function myFunction2() {
-  document.getElementById("resources-dropdown").classList.toggle("show"); 
+  if(product.classList.contains("show")){
+    product.classList.remove("show");
+  }
+  resources.classList.toggle("show"); 
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
