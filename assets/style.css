@@ -137,14 +137,18 @@ section-2
     color: var(--darkgrey);
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .section-2-part1{
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
     width: 45%;
+    justify-content: center;
 }
 .section-2-part1__items{
     width: 50%;
+    margin: 0;
 }
 .section-2-part1__items a{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -177,7 +181,8 @@ section-2
 }
 
 .section-2-part2{
-    width: 55%;
+    width: 45%;
+    flex-shrink: 1;
     padding: 10px 20px;
 }
 
@@ -484,10 +489,22 @@ section-5
     width: 95px;
     height: 95px;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    background-color: var(--white);
     -webkit-animation: slidedown 3s infinite alternate;
     -moz-animation: slidedown 3s infinite alternate;
     -o-animation: slidedown 3s infinite alternate;
     animation: slidedown 3s infinite alternate;
+}
+.section-5-main__moving-1{
+    animation-duration: 2.5s;
+}
+.section-5-main__moving-2{
+    animation-duration: 3s;
+}
+.section-5-main__moving-3{
+    animation-duration: 3.5s;
 }
 
 @-webkit-keyframes slidedown {
@@ -601,12 +618,12 @@ section-6
 Nils
 section-7
 -----------------------------*/
-.testimonials{width: 940px; display: flex;flex-direction: column;align-items: center;flex-direction: row;flex-wrap: wrap;}
+.testimonials{width: 940px; display: flex;flex-direction: row;justify-content: center; align-items: center; flex-wrap: wrap;}
 .testimonials h1 {text-align: center;display: block;width: 100%;}
 .card {background-color:var(--white);border-radius: 8px; flex: 0 0 auto; margin: 20px;padding: 0 20px;width: 45%;height: 230px;}
 .card-text p{font-size: small;font-style: italic;margin: 15px 0;}
 .card-person {display: flex;border-top: 1px solid #f3f3f3;padding-top: 10px;}
-.card-person img{ border-radius: 6px;margin-right: 25px;}
+.card-person__photo{ border-radius: 6px;margin-right: 25px; height: 100%;}
 .card-person__name { display: block; font-size: 1.1rem;margin-bottom: 9px;}
 .card-person__profession {display: block; color: var(--textlightgrey); font-size: smaller; }
 /*-----------------------------
