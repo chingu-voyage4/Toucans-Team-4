@@ -7,6 +7,7 @@ function myFunction() {
   }
     product.classList.toggle("show"); 
 }
+
 function myFunction2() {
   if(product.classList.contains("show")){
     product.classList.remove("show");
@@ -31,18 +32,11 @@ $(document).ready(function(){
     $(".header-menu").toggleClass('is-open');
     e.preventDefault();
   });
-  /*
-  //Zoey
-  //make tabs work
-  $( "#tabs" ).tabs();
-    $('.section-4-list a').on('click' , event =>{
-      $('.section-4-list a').removeClass('active-tab');
-    $(event.currentTarget).addClass('active-tab');
-  }); */
+ 
 });
 
-let tabLink = document.getElementsByClassName('section-4-list__link');
-let tabContent = document.getElementsByClassName('tab-content');
+const tabLink = document.getElementsByClassName('section-4-list__link');
+const tabContent = document.getElementsByClassName('tab-content');
 
 const openTab = (e) =>{
   for(let i=0; i<tabContent.length; i++){

@@ -82,18 +82,19 @@ header
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0;
+    padding-left: 10px;
     list-style-type: none;
     top: 72px;
     border-radius: 10px;
     background-color: var(--white);
 }
 /* Links inside the dropdown */
-.header-dropdown a {color: var(--lightgrey);padding: 14px 8px 14px 18px;display: block;}
+.header-dropdown a {color: var(--lightgrey);padding: 14px 8px;display: block;}
 /* Change color of dropdown links on hover */
 .header-dropdown a:hover {color: var(--darkgrey);transition: .3s;}
 /* Show the dropdown menu */
 .show {display: block;}
-.header__icon-bar{display: block;float: right;padding:20px;display: none;}
+.header__icon-bar{float: right;padding:20px;display: none;}
 .header__icon-bar span{display: block;height:2px; width: 15px;background:var(--green); margin-bottom: 2px;}
 /*-----------------------------
 Lazycesar
