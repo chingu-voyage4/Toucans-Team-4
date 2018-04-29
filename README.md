@@ -8,6 +8,7 @@ Voyage-4
   * Flex Box
   * BEM Methodology
   * CSS Variables
+  * CSS Animation
 * Javascript/jQuery
 
 
